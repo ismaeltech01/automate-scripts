@@ -1,0 +1,31 @@
+# Note: You will need adb (Android Debugging Bridge) installed
+
+#!/usr/bin/bash
+
+# Google apps
+adb shell pm uninstall -k --user 0 com.google.android.youtube
+adb shell pm uninstall -k --user 0 com.google.android.music
+adb shell pm uninstall -k --user 0 com.google.android.apps.maps
+adb shell pm uninstall -k --user 0 com.google.android.apps.photos
+adb shell pm uninstall -k --user 0 com.google.android.apps.tachyon #Google Duo
+adb shell pm uninstall -k --user 0 com.google.android.googlequicksearchbox #Google App
+adb shell pm uninstall -k --user 0 com.google.android.videos #Google Play Movies (Outdated)
+
+#Android Apps
+adb shell pm uninstall -k --user 0 com.android.calendar
+
+# MetroPCS Apps
+adb shell pm uninstall -k --user 0 com.handmark.metro.launcher #App Store
+adb shell pm uninstall -k --user 0 com.metropcs.metrozone
+adb shell pm uninstall -k --user 0 com.ironsrc.aura.tmo #App Selector
+adb shell pm uninstall -k --user 0 com.nuance.nmc.sihome.metropcs #myMetro
+
+# LGE Apps
+adb shell pm uninstall -k --user 0 com.lge.email
+adb shell pm uninstall -k --user 0 com.lge.music
+adb shell pm uninstall -k --user 0 com.lge.voicerecorder
+adb shell pm uninstall -k --user 0 com.lge.task
+adb shell pm uninstall -k --user 0 com.lge.exchange
+
+# Facebook
+adb shell pm uninstall -k --user 0 com.facebook.katana
