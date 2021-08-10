@@ -1,0 +1,27 @@
+#!/usr/bin/bash
+
+# Update system
+sudo pamac upgrade -a
+
+# General Apps
+sudo pacman -Syu firefox
+sudo pacman -Syu chromium
+sudo pacman -Syu gnome-system-monitor
+sudo pacman -Syu gnome-disk-utility
+sudo pacman -Syu virtualbox
+sudo pacman -Syu krita
+sudo pacman -Syu gimp
+
+# Installing snapd
+sudo pacman -Syu snapd
+sudo systemctl enable --now snapd.socket
+
+# Snapd apps
+sudo snap install code --classic
+
+# Development tech
+sudo pacman -Syu nodejs
+sudo pacman -Syu base-devel
+
+
+
