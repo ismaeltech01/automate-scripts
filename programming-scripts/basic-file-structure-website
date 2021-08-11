@@ -1,0 +1,52 @@
+#!/usr/bin/bash
+
+# Create files & directories
+mkdir scripts images styles components
+touch index.html README.md .gitignore
+
+# CSS
+cd styles
+touch styles.css
+
+# Javascript
+cd ../scripts
+touch header.js footer.js
+cd ..
+
+# Setting up basic template for CSS & HTML files
+html_template='<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link rel="stylesheet" href="" type="text/css">
+    <script src="" type="text/javascript" defer></script>
+  </head>
+  <body>
+  </body>
+</html>'
+
+css_template='/* Re-setting defaults of user agent stylesheets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}'
+
+gitignore_template='.vscode/
+Gemfile.lock*
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+gemfiles/
+vendor/'
+
+printf "$html_template" > index.html
+
+cd styles
+printf "$css_template" > styles.css
+cd ..
+
+printf "$gitignore_template" >> .gitignore
