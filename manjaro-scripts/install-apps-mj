@@ -20,7 +20,7 @@ sudo snap install code --classic
 sudo pacman -Syu base-devel
 
 # Javascript
-sudo pacman -Syu nodejs
+sudo pacman -Syu nodejs npm
 
 # Java
 sudo pacman -Syu jdk-openjdk openjdk-src jre-openjdk openjdk-doc
