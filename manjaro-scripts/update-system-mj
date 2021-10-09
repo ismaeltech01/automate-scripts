@@ -1,3 +1,4 @@
 #!/usr/bin/bash
 
 sudo pamac upgrade -a && sudo pkgfile -u
+sudo pacman -Sc #clears cache of uninstalled packages
