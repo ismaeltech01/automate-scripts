@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+echo -n "Insert the first key: "
+read firstkey
+
+echo -n "Insert the second key: "
+read secondkey
+
+if ["$firstkey" == "$secondkey"]
+then
+    echo "Keys are identical! :)"
+else
+    echo "CAUTION: Keys are NOT identical! :("
+fi
