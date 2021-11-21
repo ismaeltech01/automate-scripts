@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+echo "Apps\n\n"
+
+sudo apt install chromium tlp firejail nmap gimp shotcut
+
+sudo tlp start
+sudo tlp-stat -s
+
+echo "Dev Packages\n\n"
+
+sudo apt install git ruby2.7 rubygems
+
+sudo gem install bundle
