@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+
+echo "Which website would you like to block?"
+read website_block
+echo -e "\nAdding website to hosts file..."
+echo "127.0.0.1 $website_block" >> /etc/hosts  

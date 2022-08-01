@@ -9,6 +9,6 @@ sudo tlp-stat -s
 
 echo "Dev Packages\n\n"
 
-sudo apt install git ruby2.7 rubygems
+sudo apt install git ruby2.7 rubygems ruby-bundler ruby-dev
 
 sudo gem install bundle
