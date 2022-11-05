@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+# Clean unused package files & packages
+
+sudo apt autoclean
+sudo apt clean
+sudo apt autoremove
