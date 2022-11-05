@@ -1,3 +1,5 @@
+# Update system packages
+
 #!/usr/bin/bash
 
 sudo apt update && sudo apt upgrade #you can add the -y flag on both commands if you don't want confirmation prompts
